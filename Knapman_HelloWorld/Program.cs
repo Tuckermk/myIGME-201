@@ -24,11 +24,11 @@ namespace Knapman_HelloWorld
             Int32 int32variable = 0;
 
             Console.WriteLine("Input first name:\t");
-            string First = Console.ReadLine();
+            string first = Console.ReadLine();
             Console.WriteLine("Input last name:\t");
-            string Last = Console.ReadLine();
+            string last = Console.ReadLine();
             
-            Console.Write(" Your name is " + First + " " + Last);
+            Console.Write(" Your name is " + first + " " + last);
             Console.WriteLine("\nTucker Knapman \t");
             Math();
         }
@@ -37,40 +37,42 @@ namespace Knapman_HelloWorld
             Restrictions: None */
         static void Math()
         {
-            int ParentInt = 0;
+            int parentInt = 0;
             {
-                ParentInt = 1;
-                Console.WriteLine(ParentInt);
+                parentInt = 1;
+                Console.WriteLine(parentInt);
             } //These prints end up both printing 1
-            Console.WriteLine(ParentInt);
+            Console.WriteLine(parentInt);
 
 
             Console.WriteLine("Input any number:\t");
             string sInput = Console.ReadLine();
             int nInput = 0;
 
-            // 3 different methods of converting string to number
-            try
-            {
-                nInput = Convert.ToInt32(sInput);
-            }
-            catch
-            {
-
-                Console.WriteLine("Actually put in a number");
-            }
-            try
-            {
-                nInput = int.Parse(sInput);
-            }
-            catch
-            {
-                Console.WriteLine("Actually put in a number");
-            }
+            
             bool bValid = false;
             while (!bValid)
             {
                 bValid = int.TryParse(sInput, out nInput);
+
+                // 3 different methods of converting string to number
+                try
+                {
+                    nInput = Convert.ToInt32(sInput);
+                }
+                catch
+                {
+
+                    Console.WriteLine("Actually put in a number");
+                }
+                try
+                {
+                    nInput = int.Parse(sInput);
+                }
+                catch
+                {
+                    Console.WriteLine("Actually put in a number");
+                }
             }
 
             int x = 2;
