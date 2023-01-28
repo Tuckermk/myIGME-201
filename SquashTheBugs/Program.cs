@@ -49,11 +49,11 @@ namespace SquashTheBugs
                 allNumbers += i + " ";
 
                 // increment the counter
-                //i = i + 1; Logic error doesnt need to be here
+                //i = i + 1; Logic error doesnt need to be here, already increments due to the for loop
             }
 
             // output all numbers which have been processed
-            //Console.WriteLine("These numbers have been processed: " allNumbers);
+            //Console.WriteLine("These numbers have been processed: " allNumbers); syntax error add a plus between string and variable
             Console.WriteLine("These numbers have been processed: " + allNumbers);
         }
     }
