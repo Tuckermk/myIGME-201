@@ -10,9 +10,16 @@ namespace Tester
     {
         static void Main(string[] args)
         {
-            string hi = "supercalifragilisticexpialidocious";
 
-            Console.WriteLine(hi);
+            double num1 = (6 / 4 + 3.5) / 2;
+
+            Console.WriteLine(num1);
+            
+            /*
+            Console.Write("Hi there");
+            Console.Write("David");
+            Console.Out.WriteLine("50 plus 25 is " + 50 + 25);
+            */
             
         }
     }
