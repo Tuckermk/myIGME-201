@@ -17,8 +17,37 @@ namespace Hw4
             Restrictions: None */
         static void Main(string[] args)
         {
-            Q5();
+            Q2();
         }
+
+
+        /* Method: Q2
+         * Purpose: Question 2 solution
+            Restrictions: inputting ints less than 10 for var1 and 2 */
+        static void Q2()
+        {
+
+        start:
+            bool oper1 = false;
+            bool oper2 = false;
+
+            Console.WriteLine("Input 2 ints");
+            int var1 = int.Parse(Console.ReadLine());
+            int var2 = int.Parse(Console.ReadLine());
+
+
+            if (var1 >= 10) { oper1 = true; }
+            if (var2 >= 10) { oper2 = true; }
+            if (oper1 && oper2 == true)
+            {
+                Console.WriteLine("Input valid ints");
+                goto start;
+            }
+
+            Console.WriteLine("Var1: " + var1 + " Var2: " + var2);
+
+        }
+
 
         /* Method: Q1
          * Purpose: Workspace for getting through Q1
@@ -39,31 +68,7 @@ namespace Hw4
             }
             if (oper1 != oper2) { Console.WriteLine("realize that this is basically number 2"); }
         }
-        /* Method: Q2
-         * Purpose: Question 2 solution
-            Restrictions: inputting ints less than 10 for var1 and 2 */
-        static void Q2()
-        {
-            
-            start:
-            bool oper1 = false;
-            bool oper2 = false;
-            
-            Console.WriteLine("Input 2 ints");
-            int var1 = int.Parse(Console.ReadLine());
-            int var2 = int.Parse(Console.ReadLine());
-                    
-
-            if (var1 >= 10){oper1 = true;}
-            if (var2 >= 10) { oper2 = true; }
-            if (oper1 && oper2 == true) {
-                Console.WriteLine("Input valid ints");
-                goto start; 
-            }
-
-                Console.WriteLine("Var1: " + var1 + " Var2: " + var2);
-
-        }
+        
         /* Method: Q4
          * Purpose: Question 4 workspace
             Restrictions: None */
