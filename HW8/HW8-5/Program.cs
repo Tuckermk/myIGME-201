@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace HW8_5
 {
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Make a 3D array with given function for Z
+            and X and Y ranges
+    Restricitions: None */
     internal class Program
     {
+        /* Method: Main
+         * Purpose: Run the solution to the question
+            Restrictions: None*/
         static void Main(string[] args)
         {
             double[,,] superArray;
