@@ -14,7 +14,7 @@ namespace HW8_7
     {
         /* Method: Main
          * Purpose: Run the solution to the question
-            Restrictions: None */
+            Restrictions: Inputting an actual string*/
         static void Main(string[] args)
         {
             Console.WriteLine("Write a thing to be reversed");
