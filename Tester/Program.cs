@@ -11,17 +11,45 @@ namespace Tester
         static void Main(string[] args)
         {
 
-            double num1 = (6 / 4 + 3.5) / 2;
 
-            Console.WriteLine(num1);
-            
-            /*
-            Console.Write("Hi there");
-            Console.Write("David");
-            Console.Out.WriteLine("50 plus 25 is " + 50 + 25);
-            */
-            
+            int[] ascendingNumbers = new int[5];
+            for (int i = 0; i < ascendingNumbers.Length; i++)
+            {
+                ascendingNumbers[i] = i + 1;
+            }
+
+
+
+            double[] percipitation;
+            percipitation = new double[4];
+            percipitation[0] = .45;
+            percipitation[1] = 2.78;
+            percipitation[2] = .04;
+            percipitation[3] = 1.22;
+
+
+
         }
+        enum colors : ushort
+        {
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            purple,
+            black,
+            white
+        }
+        static float test()
+    {
+
+        byte x = 0;
+        return x;
     }
+
+
+
+    } 
 }
 
