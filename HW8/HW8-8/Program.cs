@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace HW8_8
 {
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Switch no to yes
+    Restricitions: None */
     static internal class Program
     {
-
+        /* Method: Main
+         * Purpose: Run the solution to the question
+            Restrictions: None */
         static void Main(string[] args)
         {
 
