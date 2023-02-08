@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace HW8_9
 {
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Add double quotes to every word
+    Restricitions: None */
     static internal class Program
     {
-
+        /* Method: Main
+         * Purpose: Run the solution to the question
+            Restrictions: None */
         static void Main(string[] args)
         {
             string aString = "She said, No, I have nothing in my purse!";
