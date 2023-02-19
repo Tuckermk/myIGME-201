@@ -22,9 +22,30 @@ namespace Test1_3
          */
         static void Main(string[] args)
         {
-            double testValue = 3.3;
+            double[,,] zFunc = new double[41, 21, 3];
+            double dX, dY, dZ;
+            int nX, nY;
+            nX = 0;
             roundingMath deliExample;
             deliExample = new roundingMath(RoundingFunction);
+            for (dX = 0; dX <= 4; dX += .1)
+            {
+                dX = deliExample(dX, 1);
+                nY = 0;
+                for(dY = -1; dY <= 1; dY += .1)
+                {
+                    dY = deliExample(dY, 1);
+                    dZ = (4*dY*dY*dY)+(2*dX*dX)-(8*dX)+7;
+                    dZ = deliExample(dZ, 3);
+
+                    zFunc[nX, nY, 0] = dX;
+                    zFunc[nX,nY,1] = dY;
+                    zFunc[nX,nY,2] = dZ;
+                    ++nY;
+                }
+                ++nX;
+            }
+            
         }
 
         static double RoundingFunction(double input, int decimalCount)
