@@ -23,75 +23,39 @@ using System.Timers;
 
 namespace Tester
 {
+    using When = pain;
+ 
     static internal class Program
     {
-        static Timer timeOutTimer;
-        static bool bTimeOut = false;
-
+       
         static void Main(string[] args)
         {
-
-
-        start:
-            bTimeOut = false;
-
-            string displayString = "";
-            Random rand = new Random();
-            Console.Clear();
-
-            while (!bTimeOut)
-            {
-                displayString += (char)('A' + rand.Next(0, 26));
-                foreach (char c in displayString)
-                {
-                    Console.Write(c);
-                    System.Threading.Thread.Sleep(500);
-                }
-
-                Console.Clear();
-
-                timeOutTimer = new Timer(displayString.Length * 500 + 1000);
-
-                // Timer calls the Timer.Elapsed event handler when the time elapses
-                // The Timer.Elapsed event handler uses a delegate function with the following signature:
-                //        public delegate void ElapsedEventHandler(object sender, ElapsedEventArgs e);
-                // This delegate method type is already defined for us by .NET
-                timeOutTimer.Elapsed += new ElapsedEventHandler(TimesUp);
-
-                timeOutTimer.Start();
-
-                string sAnswer = null;
-                sAnswer = Console.ReadLine();
-
-                timeOutTimer.Stop();
-
-                if (sAnswer.ToUpper() == displayString && !bTimeOut /* same as bTimeOut == false */ )
-                {
-                    Console.WriteLine("Well Done!  Your current score is {0}", displayString.Length);
-                }
-                else
-                {
-                    Console.WriteLine("Bad luck.  :(  The correct code was {0}.  Your final score is: {1}", displayString, displayString.Length - 1);
-
-                    // set timeout to leave the while() loop
-                    bTimeOut = true;
-                }
-            }
-
-            Console.Write("Press Enter to Play Again");
-            Console.ReadLine();
-
-            goto start;
-
+            float value;
+            
         }
-
-        static void TimesUp(object sender, ElapsedEventArgs e)
+    }
+    namespace pain
+    {
+        
+        static public class miniPro
         {
-            Console.WriteLine();
-            Console.WriteLine("Your time is up!");
-            Console.WriteLine("Please press enter");
-            bTimeOut = true;
-            timeOutTimer.Stop();
+            
+            static string Second()
+            {
+                Program();
+            }
         }
+    }
+}
+namespace Worst
+{
+    using When = Episode;
+    // name "Meme" defined
+
+    namespace Episode
+    {
+        // name "Ever" defined
+        
+        static public string Ever;
     }
 }
