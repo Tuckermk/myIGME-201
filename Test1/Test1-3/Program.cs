@@ -14,7 +14,7 @@ namespace Test1_3
 
     internal class Program
     {
-        delegate int roundingMath(double n);
+        delegate double roundingMath(double n, int d);
 
         /* Method: Main
          * By: Tucker Knapman
@@ -27,9 +27,11 @@ namespace Test1_3
             deliExample = new roundingMath(RoundingFunction);
         }
 
-        static int RoundingFunction(double input)
+        static double RoundingFunction(double input, int decimalCount)
         {
-            return (int)Math.Round(input);
+            return Math.Round(input, decimalCount);
         }
+        
+        
     }
 }
