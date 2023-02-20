@@ -239,7 +239,10 @@ namespace Test1_2
             return (returnVal);
         }
 
-
+        /* Method: FindHighestString
+         * Purpose: Order the array by highest alphabetic order
+            Restrictions: valid input
+        */
         static string FindHighestString(string[] array)
         {
             string returnVal;
@@ -259,6 +262,10 @@ namespace Test1_2
             return returnVal;
         }
 
+        /* Method: FindLowestString
+         * Purpose: Order the array by lowest alphabetic order
+            Restrictions: valid input
+        */
 
         static string FindLowestString(string[] array)
         {
@@ -317,7 +324,9 @@ namespace Test1_2
             array = newArray;
         }
 
-
+        /* Method: RemoveUnsortedString
+         * Purpose: Remove Strings from arrays
+            Restrictions: valid inputs required*/
         static void RemoveUnsortedString(string removeValue, ref string[] array)
         {
             // allocate a new array to hold 1 less value than the source array
