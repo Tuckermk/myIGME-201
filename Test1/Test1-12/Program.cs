@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Test1_12
 {
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Raise my salary
+    Restricitions: None */
     internal class Program
     {
+        /* Method: Main
+         * Purpose: Read if its me and raise only my salary
+            Restrictions: None*/
         static void Main(string[] args)
         {
             string sName;
