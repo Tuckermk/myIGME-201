@@ -11,11 +11,18 @@ namespace Test1_Question4
     using System.Timers;
 
 
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Be a timed choose your own question 3 question quiz
+    */
     class Program
     {
         static Action target = new Action(Main);
         static bool bTimeOut = false;
         static Timer timeoutTimer;
+        /* Method: Main
+         * Purpose: Run the quiz and its 3 questions
+            Restrictions: None*/
         static void Main()
         {
 
@@ -141,7 +148,9 @@ namespace Test1_Question4
 
 
         }
-
+        /* Method: TimesUp
+         * Purpose: Be the timeout exception handler for the timer
+            Restrictions: None*/
         static void TimesUp(object sender, ElapsedEventArgs e)
         {
             
