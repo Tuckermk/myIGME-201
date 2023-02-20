@@ -47,7 +47,10 @@ namespace Test1_3
             }
             
         }
-
+        /* Method: RoundingFunction
+         * Purpose: Literally just do the Math.Round() command with given inputs
+            Restrictions: valid input
+        */
         static double RoundingFunction(double input, int decimalCount)
         {
             return Math.Round(input, decimalCount);
