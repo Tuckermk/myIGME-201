@@ -18,7 +18,8 @@ namespace Test1_3
 
         /* Method: Main
          * By: Tucker Knapman
-         * Purpose: be example  for a delegate
+         * Purpose: be example  for a delegate 
+                as well as make a 3D array with the function given in question 8
          */
         static void Main(string[] args)
         {
