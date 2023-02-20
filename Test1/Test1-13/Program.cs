@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Test1_13
 {
+
+    /* Class : Program
+    Author : Tucker Knapman
+    Purpose : Raise my salary, but with a struct
+    Restricitions: None */
     internal class Program
     {
         struct employee
@@ -13,6 +18,9 @@ namespace Test1_13
             public string sName;
             public double dSalary;
         }
+        /* Method: Main
+         * Purpose: Raise my salary if I give it my name
+            Restrictions: None*/
         static void Main(string[] args)
         {
             string sName;
