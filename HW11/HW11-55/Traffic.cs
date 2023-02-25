@@ -8,7 +8,10 @@ using Vehicles;
 
 namespace Traffic
 {
-
+    /* Class : Traffic
+    Author : Tucker Knapman
+    Purpose : Add a passenger
+    Restricitions: Valid  input*/
     internal class Traffic
     {
         void AddPassenger(Vehicles.IPassengerCarrier i)
