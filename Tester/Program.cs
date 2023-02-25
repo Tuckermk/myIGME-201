@@ -14,12 +14,14 @@ using System.Threading.Tasks;
 
 namespace Tester
 {
-    class Program {
-        static void Main(string[] args) {
-            uint hi = 2333333333;
-            long bye = hi;
-
-
-        }
+    public sealed class MyClass
+    {
+        // class members
     }
+
+    public class myDerivedClass : MyClass
+    {
+        // class members
+    }
+
 }
