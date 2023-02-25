@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Vehicles
 {
     public abstract class Vehicle
@@ -11,7 +6,8 @@ namespace Vehicles
         public virtual void LoadPassenger() { }
     }
     public abstract class Car : Vehicle { }
-    public interface IPassengerCarrier {
+    public interface IPassengerCarrier
+    {
         void LoadPassenger();
     }
 
@@ -24,8 +20,7 @@ namespace Vehicles
 
     public class PassengerTrain : Train, IPassengerCarrier { }
 
-    public class FreightTrain : Train, IHeavyLoadCarrier { }  
+    public class FreightTrain : Train, IHeavyLoadCarrier { }
     public class _424DoubleBogey : Train, IHeavyLoadCarrier { }
-
 
 }
