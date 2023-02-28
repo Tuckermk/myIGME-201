@@ -7,13 +7,22 @@ using System.Threading.Tasks;
 
 namespace HW12_3
 {
-    public class MyDerivedClass : MyClass {
-        public override string GetString()
+    public class MyDerivedClass : MyClass
+    {
+        private string MyString;
+        public override string GetString
         {
+            get { return MyString + "(Output from derived class)"; }
             
-            return 
         }
-           
-    }
+        static public void Main()
+        {
+            MyClass k = new MyClass();
+            Console.WriteLine($"HI{k.GetString}");
+            MyDerivedClass c = new MyDerivedClass();
+            Console.WriteLine($"BYE{c.GetString}");
 
+        }
+
+    }
 }
