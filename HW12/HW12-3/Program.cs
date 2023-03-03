@@ -12,7 +12,7 @@ namespace HW12_3
         private string MyString;
         public override string GetString
         {
-            get { return MyString + "(Output from derived class)"; }
+            get { return MyString + " (Output from derived class)"; }
             
         }
         static public void Main()

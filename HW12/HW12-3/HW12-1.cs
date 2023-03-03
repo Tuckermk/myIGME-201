@@ -5,7 +5,7 @@
         private string myString;
         public virtual string GetString {
             get { return myString; }
-            set { myString = value; }
+            set { myString = "Hello"; }
         }
     }
 }
