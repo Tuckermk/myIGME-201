@@ -14,22 +14,36 @@ using System.Threading.Tasks;
 
 namespace Tester
 {
-    public sealed class Circus
-    {
-        public string name;
-        public string name2 = "hi";
-    }
-
-
     static class Program
     {
-        static void Main()
+        
+        public class MyClass
         {
-            Circus myCircus = new Circus();
-            Console.WriteLine( myCircus.name2);
+            public int myInt;
+            public MyClass(int nVal)
+            {
+                this.myInt += nVal;
+            }
+            public object Shallow()
+            {
+                return this.MemberwiseClone();
+            }
         }
-    }
+        public class MyDerivedClass : MyClass
+        {
+            public MyDerivedClass(int nVal) : base(nVal){
+                this.myInt = (this.myInt + 2)*4;
+            }
+        }
+        static void Main(string[] args)
+        {
+            MyDerivedClass myObj = new MyDerivedClass(42);
 
+            MyClass objectA = new MyClass(22);
+            MyClass objectB = (MyClass)objectA.Shallow();
+        }
+
+    }
 }
 
 

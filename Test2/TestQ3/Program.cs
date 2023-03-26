@@ -17,7 +17,7 @@ namespace TestQ3
             Restrictions: None */
         static void Main(string[] args)
         {
-            //(double, double, double) zcalc = (x,y,w);
+           
             SortedList<(double, double, double), double> calc = new SortedList<(double, double, double), double>();
 
             for (double x = 0; x <= 4; x += .1)
