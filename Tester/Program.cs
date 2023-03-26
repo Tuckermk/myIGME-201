@@ -14,14 +14,24 @@ using System.Threading.Tasks;
 
 namespace Tester
 {
-    public sealed class MyClass
+    public sealed class Circus
     {
-        // class members
+        public string name;
+        public string name2 = "hi";
     }
 
-    public class myDerivedClass : MyClass
+
+    static class Program
     {
-        // class members
+        static void Main()
+        {
+            Circus myCircus = new Circus();
+            Console.WriteLine( myCircus.name2);
+        }
     }
 
 }
+
+
+
+
