@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PE20Dom
+namespace PE20DOMAT2
 {
     internal static class Program
     {

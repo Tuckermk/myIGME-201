@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PE20Dom.Properties
+namespace PE20DOMAT2.Properties
 {
 
 
