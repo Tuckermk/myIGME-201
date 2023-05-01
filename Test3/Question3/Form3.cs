@@ -31,8 +31,8 @@ namespace Question3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime dateTime = DateTime.Parse("11/11/2011");
-            if (WHY.Text == "11/11/2011")
+            DateTime dateTime = DateTime.Parse("11/11/1111");
+            if (WHY.Text == "11/11/1111")
             {
                 Form form = new Form1();
                 timer.Enabled = false;
@@ -45,8 +45,8 @@ namespace Question3
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            DateTime dateTime = DateTime.Parse("11/11/2011");
-            if (WHY.Text == "11/11/2011")
+            DateTime dateTime = DateTime.Parse("11/11/1111");
+            if (WHY.Text == "11/11/1111")
             {
                 timer.Enabled = false;
 
