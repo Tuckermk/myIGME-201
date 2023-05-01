@@ -34,25 +34,32 @@ namespace Question3
         {
             Thread thread = new Thread(() =>
             {
+                Form thisFrom = this;
                 int z = random.Next(0, 3);
                 if (z == 0)
                 {
                     Form form = new Form1();
-                    form.ShowDialog();
+                    form.Text = this.Text;
                     this.Hide();
+                    form.ShowDialog();
+
+
                 }
                 else if (z == 1)
                 {
                     Form form = new Form2();
-                    form.ShowDialog();
+                    form.Text = this.Text;
                     this.Hide();
+                    form.ShowDialog();
+
 
                 }
                 else
                 {
                     Form form = new Form3();
-                    form.ShowDialog();
                     this.Hide();
+                    form.ShowDialog();
+                    
                 }
             });
             thread.Start();

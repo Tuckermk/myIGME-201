@@ -42,7 +42,7 @@ namespace Question3
                 {
                     case DialogResult.Yes:
                         
-                        if (form.Text == "Section of the way there")
+                        if (this.Text == "Section of the way there")
                         Application.Exit();
                         break;
                     case DialogResult.No:

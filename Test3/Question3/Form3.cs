@@ -13,14 +13,14 @@ namespace Question3
     public partial class Form3 : Form
     {
 
-        Form form = new Form1();
+        Form form = null;
         public Form3()
         {
             InitializeComponent();
             timer.Tick += new EventHandler(Timer_Tick);
             timer.Enabled = true;
             button1.Click += new EventHandler(button1_Click);
-            dateTimePicker1.Value = DateTime.Now;
+            WHY.Text = DateTime.Now.ToString();
             //exitButton.Click += new EventHandler(exitButton_Click);
         }
 
@@ -31,9 +31,10 @@ namespace Question3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime dateTime = DateTime.Parse("2/2/2022");
-            if (dateTimePicker1.Value == dateTime)
+            DateTime dateTime = DateTime.Parse("11/11/2011");
+            if (WHY.Text == "11/11/2011")
             {
+                Form form = new Form1();
                 timer.Enabled = false;
                 form.Text = "Section of the way there";
                 this.Hide();
@@ -44,25 +45,29 @@ namespace Question3
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            DateTime dateTime = DateTime.Parse("2/2/2022");
-            if (dateTimePicker1.Value == dateTime)
+            DateTime dateTime = DateTime.Parse("11/11/2011");
+            if (WHY.Text == "11/11/2011")
             {
                 timer.Enabled = false;
 
-                
+                Form form = new Form1();
                 this.Hide();
                 form.Text = "Section of the way there";
                 form.ShowDialog();
-                
             }
+            
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (progressBar.Value == 0) {
-
-                form.Text = "its 2sday whats so hard";
+                Form form = new Form1();
+                form.Text = "its 1sday whats so hard";
+                WHY.Text = DateTime.Now.ToString();
+                progressBar.Value = 1;
+                timer.Enabled = false;
                 this.Hide();
+                
                 form.ShowDialog();
             }
             else { progressBar.Value -= 1; }
@@ -70,6 +75,11 @@ namespace Question3
 
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar_Click(object sender, EventArgs e)
         {
 
         }
