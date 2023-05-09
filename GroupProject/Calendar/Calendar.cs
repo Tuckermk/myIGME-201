@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using HOME;
 
 namespace Calendar
 {
@@ -43,8 +44,8 @@ namespace Calendar
          //make a new list box for the day
             //Sizing/placing box
             ListBox newBox = new ListBox();
-            newBox.Location = new Point(14, 280);
-            newBox.Size = new Size(366, 251);
+            newBox.Location = new Point(13, 290);
+            newBox.Size = new Size(362, 251);
             //Naming the box
             newBox.Name = monthCalendar.TodayDate.ToShortDateString();
             newBox.Tag = monthCalendar.TodayDate.ToShortDateString();
@@ -52,7 +53,7 @@ namespace Calendar
 
             //Coloring it
             newBox.ForeColor = Color.Black;
-            newBox.BackColor = Color.Thistle;
+            newBox.BackColor = Color.Goldenrod;
             newBox.BorderStyle = BorderStyle.FixedSingle;
 
             //Making sure its visible
@@ -67,6 +68,7 @@ namespace Calendar
             Controls.Add(this.thebox);
             this.thebox.BringToFront();
         }
+      
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -96,8 +98,8 @@ namespace Calendar
          //make a new list box for the day
                 //Sizing/placing box
                 ListBox newBox = new ListBox();
-                newBox.Location = new Point(14, 280);
-                newBox.Size = new Size(366, 251);
+                newBox.Location = new Point(13, 290);
+                newBox.Size = new Size(362, 251);
                 //Naming the box
                 newBox.Name = monthCalendar.SelectionStart.ToShortDateString();
                 newBox.Tag = monthCalendar.SelectionStart.ToShortDateString();
@@ -105,7 +107,7 @@ namespace Calendar
 
                 //Coloring it
                 newBox.ForeColor = Color.Black;
-                newBox.BackColor = Color.Thistle;
+                newBox.BackColor = Color.Goldenrod;
                 newBox.BorderStyle = BorderStyle.FixedSingle;
 
                 newBox.Visible = true;

@@ -63,9 +63,9 @@ namespace Calendar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_icon {
+        internal static System.Drawing.Bitmap OrangeHome {
             get {
-                object obj = ResourceManager.GetObject("home-icon", resourceCulture);
+                object obj = ResourceManager.GetObject("OrangeHome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,19 +73,9 @@ namespace Calendar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap target_icon {
+        internal static System.Drawing.Bitmap OrangeHome1 {
             get {
-                object obj = ResourceManager.GetObject("target-icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap weight_icon {
-            get {
-                object obj = ResourceManager.GetObject("weight-icon", resourceCulture);
+                object obj = ResourceManager.GetObject("OrangeHome1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
