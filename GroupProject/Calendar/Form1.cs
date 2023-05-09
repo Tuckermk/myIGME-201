@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace HOME
 {
-    /* Class : Calender
-    Author : Yanzhi 
-    Purpose : be a calendar that a user can input and remove stuff into
-    Restricitions: Selecting multiple days on calendar doesnt work */
+    /* Class : HomeForm
+    Author : Yanzhi Wang
+    Purpose : Homepage of app
+    Restricitions: none? idk Tucker put in this little comment block */
     public partial class HomeForm : Form
     {
         public HomeForm()
