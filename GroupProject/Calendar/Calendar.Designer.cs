@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.removeButton = new System.Windows.Forms.Button();
             this.modifyButton = new System.Windows.Forms.Button();
@@ -40,22 +41,21 @@
             this.addSomeThingLabel = new System.Windows.Forms.Label();
             this.newTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.workOutPictureBox = new System.Windows.Forms.PictureBox();
             this.goalsPictureBox = new System.Windows.Forms.PictureBox();
             this.homePictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ritlogopictureBox = new System.Windows.Forms.PictureBox();
-            this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workOutPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goalsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ritlogopictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +75,13 @@
             this.splitContainer1.Size = new System.Drawing.Size(370, 509);
             this.splitContainer1.SplitterDistance = 164;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // monthCalendar
+            // 
+            this.monthCalendar.Location = new System.Drawing.Point(66, 5);
+            this.monthCalendar.Name = "monthCalendar";
+            this.monthCalendar.TabIndex = 0;
+            this.monthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // groupBox1
             // 
@@ -199,6 +206,16 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(78, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(611, 26);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // workOutPictureBox
             // 
             this.workOutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("workOutPictureBox.Image")));
@@ -222,7 +239,7 @@
             // 
             // homePictureBox
             // 
-            this.homePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("homePictureBox.Image")));
+            this.homePictureBox.Image = global::Calendar.Properties.Resources.OrangeHome;
             this.homePictureBox.Location = new System.Drawing.Point(22, 16);
             this.homePictureBox.Name = "homePictureBox";
             this.homePictureBox.Size = new System.Drawing.Size(63, 36);
@@ -230,32 +247,17 @@
             this.homePictureBox.TabIndex = 0;
             this.homePictureBox.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(102, -26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(522, 54);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // ritlogopictureBox
             // 
             this.ritlogopictureBox.BackColor = System.Drawing.Color.Orange;
-            this.ritlogopictureBox.Location = new System.Drawing.Point(-90, -26);
+            this.ritlogopictureBox.Image = global::Calendar.Properties.Resources.rit_logo;
+            this.ritlogopictureBox.Location = new System.Drawing.Point(-4, -7);
             this.ritlogopictureBox.Margin = new System.Windows.Forms.Padding(6);
             this.ritlogopictureBox.Name = "ritlogopictureBox";
-            this.ritlogopictureBox.Size = new System.Drawing.Size(200, 54);
+            this.ritlogopictureBox.Size = new System.Drawing.Size(85, 34);
+            this.ritlogopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ritlogopictureBox.TabIndex = 11;
             this.ritlogopictureBox.TabStop = false;
-            // 
-            // monthCalendar
-            // 
-            this.monthCalendar.Location = new System.Drawing.Point(66, 5);
-            this.monthCalendar.Name = "monthCalendar";
-            this.monthCalendar.TabIndex = 0;
-            this.monthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // Calendar
             // 
@@ -276,10 +278,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workOutPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goalsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ritlogopictureBox)).EndInit();
             this.ResumeLayout(false);
 

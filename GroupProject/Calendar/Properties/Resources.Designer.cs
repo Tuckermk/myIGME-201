@@ -63,6 +63,36 @@ namespace Calendar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar {
+            get {
+                object obj = ResourceManager.GetObject("calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exercise_goals {
+            get {
+                object obj = ResourceManager.GetObject("exercise goals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_workout {
+            get {
+                object obj = ResourceManager.GetObject("new workout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OrangeHome {
             get {
                 object obj = ResourceManager.GetObject("OrangeHome", resourceCulture);
@@ -76,6 +106,16 @@ namespace Calendar.Properties {
         internal static System.Drawing.Bitmap OrangeHome1 {
             get {
                 object obj = ResourceManager.GetObject("OrangeHome1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rit_logo {
+            get {
+                object obj = ResourceManager.GetObject("rit logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

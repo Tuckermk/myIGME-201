@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using HOME;
+using HOME;
 
 namespace Calendar
 {
@@ -17,6 +17,7 @@ namespace Calendar
     Author : Tucker Knapman
     Purpose : be a calendar that a user can input and remove stuff into
     Restricitions: Selecting multiple days on calendar doesnt work */
+    //
     public partial class Calendar : Form
     {
         List<ListBox> dateset = new List<ListBox>();
@@ -243,8 +244,7 @@ namespace Calendar
         private void HomePictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form home = new Form();
-
+            Form home = new HOME.HomeForm();
             home.ShowDialog();
         }
         private void GoalsPictureBox_Click(object sender, EventArgs e)
