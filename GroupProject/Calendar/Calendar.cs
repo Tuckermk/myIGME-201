@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HOME;
+using GoalsPage;
+using WindowsFormsApp1;
 
 namespace Calendar
 {
@@ -250,16 +252,17 @@ namespace Calendar
         private void GoalsPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form goals = new Form();
-
+            Form goals = new GoalsPage.Goals();
+            
             goals.ShowDialog();
+            this.Show();
         }
         private void WorkOutPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form workout = new Form();
-
+            Form workout = new WindowsFormsApp1.Workout();
             workout.ShowDialog();
+            this.Show();
         }
 
 

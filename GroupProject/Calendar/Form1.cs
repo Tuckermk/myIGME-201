@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GoalsPage;
+using WindowsFormsApp1;
 
 namespace HOME
 {
@@ -21,6 +23,7 @@ namespace HOME
             InitializeComponent();
             /*
              * The code for the images are being overridden by Tucker as getting the 2 forms to link has been annoying
+             * Images are still there I just implemented them slightly differently
              * 
             // Set the image for homePictureBox
             this.homePictureBox.Image = global::HOME.Properties.Resources.logo;
@@ -68,7 +71,7 @@ namespace HOME
         {
             // Navigate to the New_Workout page
             this.Hide();
-            Form newWorkoutForm = new Form();
+            Form newWorkoutForm = new WindowsFormsApp1.Workout();
             newWorkoutForm.ShowDialog();
             this.Show();
         }
@@ -78,7 +81,7 @@ namespace HOME
         {
             // Navigate to the Exercise_Goal page
             this.Hide();
-            Form exerciseGoalForm = new Form();
+            Form exerciseGoalForm = new GoalsPage.Goals();
             exerciseGoalForm.ShowDialog();
             this.Show();
         }
