@@ -12,7 +12,7 @@ using WindowsFormsApp1;
 
 namespace GoalsPage
 {
-    /* Class : HomeForm
+    /* Class : Goals
    Author : Julian
    Purpose : Goals page of app
    Restricitions: none? idk Tucker put in this little comment block */
